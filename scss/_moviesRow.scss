@@ -1,0 +1,35 @@
+.row {
+  margin-bottom: 5rem;
+
+  h1 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-left: $primary-padding;
+    cursor: pointer;
+  }
+
+  &__poster {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    img {
+      width: 180px;
+      margin-right: 1.5rem;
+      object-fit: contain;
+      transition: transform 450ms;
+      cursor: pointer;
+      border-radius: $border-radius;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+}

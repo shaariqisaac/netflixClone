@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="#"
+          ><img
+            src="./assets/logo.png"
+            alt="Netflix Log"
+            class="nav-left__logo"
+        /></a>
+        <ul class="nav-left__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">New & Popular</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <div class="profile__icon">
+          <a href="#"><img src="./assets/profile.png" alt="profile Image" /></a>
+          <a href="#"><i class="fas fa-caret-down"></i></a>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <h1 id="title">Stranger Things</h1>
+      <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum
+        rerum, inventore exercitationem commodi itaque fugiat natus deleniti
+        quia porro?
+      </p>
+      <div class="btns">
+        <a href="#" class="play"><i class="fas fa-play"></i> Play</a>
+        <a href="#" class="info"><i class="fas fa-info"></i> More Info</a>
+      </div>
+      <div class="rated"><span>16+</span></div>
+    </header>
+
+    <div class="row -mt">
+      <h1>Popular Movies</h1>
+      <div class="row__poster" id="popular"></div>
+    </div>
+
+    <div class="row">
+      <h1>Best Movies Of The Year</h1>
+      <div class="row__poster" id="moviesOfTheYear"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

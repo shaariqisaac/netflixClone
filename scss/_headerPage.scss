@@ -1,0 +1,79 @@
+.header {
+  background-image: url(../assets/header_img.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: $primary-padding;
+  gap: 3rem;
+
+  #title {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .btns {
+    display: flex;
+    gap: 2rem;
+    a {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+    .play {
+      background-color: white;
+      color: black;
+      padding: 1.2rem 3rem;
+      border-radius: $border-radius;
+    }
+    .info {
+      background-color: #555a56;
+      padding: 1.2rem 3rem;
+      border-radius: $border-radius;
+    }
+  }
+
+  #content {
+    color: white;
+    font-size: 1.8rem;
+    width: 40%;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .rated {
+    color: white;
+    background-color: rgba(39, 37, 39, 0.8);
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 12rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 2.5rem;
+    }
+
+    &::before {
+      content: "";
+      width: 0.5rem;
+      height: 100%;
+      position: absolute;
+      background-color: #fff;
+    }
+  }
+}
